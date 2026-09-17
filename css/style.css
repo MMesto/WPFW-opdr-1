@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #1a1a2e;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  color: #10101f;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Layout */
+
+.site-header,
+main,
+.site-footer {
+  width: 100%;
+  max-width: 64rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid #e2e2ea;
+}
+
+.site-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+main {
+  padding-block: 1rem;
+}
+
+/* Footer */
+.site-footer {
+  padding-block: 1.5rem 2rem;
+  border-top: 1px solid #e2e2ea;
+  font-size: 0.9rem;
+  color: #40405c;
+}
+
+/* Navigatie balk  */
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 0.35rem 0.25rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* portret */
+
+.intro-portret {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+/* Buttons */
+
+.button.projecten,
+.button.blog {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button.blog {
+  background-color: transparent;
+  color: #1d4ed8;
+  border: 2px solid #1d4ed8;
+}
+
+.button.blog:hover,
+.button.projecten:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* Projecten en blog layout  */
+.project-grid,
+.blog-list {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.project-card {
+  border: 1px solid #e2e2ea;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+}
+
+.blog-list article {
+  border-bottom: 1px solid #e2e2ea;
+  padding-bottom: 1.25rem;
+}
+
+.blog-list li:last-child article {
+  border-bottom: none;
+}
+/* Responsive */
+
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro h1 {
+    font-size: 2.25rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
