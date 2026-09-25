@@ -3,8 +3,6 @@ const projecten = [
   { titel: "HotelSimulator", omschrijving: "Een Java-hotelsimulatie met een tick-gebaseerde simulatiemotor", technieken: ["Java", "JUnit", "UML"], link: "https://github.com/FilipHHS/Hotelsimulator.git" },
   { titel: "Whoami", omschrijving: "Een persoonlijke portfolio-website met HTML, CSS en JavaScript", technieken: ["HTML", "CSS", "JavaScript"], link: "https://github.com/MMesto/WPFW-opdr-1.git" },
 ];
-console.log(projecten);
-console.log(projecten.length);
 
 function maakProjectKaart(project) {
   const kaart = document.createElement("li");

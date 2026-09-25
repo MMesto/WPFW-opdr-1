@@ -89,6 +89,15 @@ main {
   border-radius: 50%;
 }
 
+.contact-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact-info {
+  padding: 1rem 0;
+}
+
 /* Buttons */
 
 .button.projecten,
@@ -150,6 +159,11 @@ main {
 @media (min-width: 768px) {
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: start;
   }
 }
 
