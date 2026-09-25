@@ -162,3 +162,94 @@ main {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/* js */
+.formulierveld {
+  margin-bottom: 1rem;
+}
+
+.formulierveld label {
+  display: block;
+  font-weight: 600;
+}
+
+.formulierveld input,
+.formulierveld textarea {
+  width: 100%;
+  max-width: 30rem;
+  padding: 0.5rem;
+  font: inherit;
+}
+
+.foutmelding {
+  color: #b91c1c;
+  margin: 0.25rem 0 0;
+}
+
+[aria-invalid="true"] {
+  border: 2px solid #b91c1c;
+}
+/* Lees meer / Lees minder */
+
+.blog-list button[aria-expanded] {
+  display: inline-block;
+  margin: 0.25rem 0 0.75rem;
+  padding: 0.4rem 0.9rem;
+  font: inherit;
+  font-weight: 600;
+  color: #1d4ed8;
+  background-color: transparent;
+  border: 2px solid #1d4ed8;
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.blog-list button[aria-expanded]:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.blog-list button[aria-expanded]:focus-visible {
+  outline: 3px solid #1d4ed8;
+  outline-offset: 2px;
+}
+
+.blog-list button[aria-expanded="true"] {
+  background-color: #eef2ff;
+}
+
+/* Filter op techniek */
+
+.filterbalk {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-top: 1rem;
+}
+
+.filterbalk label {
+  font-weight: 600;
+}
+
+.filterbalk select {
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  font: inherit;
+  color: #1a1a2e;
+  background-color: #ffffff;
+  border: 2px solid #e2e2ea;
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.filterbalk select:hover {
+  border-color: #1d4ed8;
+}
+.projecten-kop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+

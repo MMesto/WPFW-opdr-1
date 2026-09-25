@@ -89,6 +89,28 @@
     <section>
       <h2>Contact</h2>
       <address>
+                <form id="contactformulier" novalidate>
+          <div class="formulierveld">
+            <label for="naam">Naam</label>
+            <input type="text" id="naam" name="naam" aria-describedby="naam-fout">
+            <p id="naam-fout" class="foutmelding"></p>
+          </div>
+
+          <div class="formulierveld">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" aria-describedby="email-fout">
+            <p id="email-fout" class="foutmelding"></p>
+          </div>
+
+          <div class="formulierveld">
+            <label for="bericht">Bericht</label>
+            <textarea id="bericht" name="bericht" rows="5" aria-describedby="bericht-fout"></textarea>
+            <p id="bericht-fout" class="foutmelding"></p>
+          </div>
+
+          <button type="submit" class="button projecten">Verstuur</button>
+          <p id="formulier-status" aria-live="polite"></p>
+        </form>
         E-mail: <a href="mailto:mo.mesto98@gmail.com">mo.mesto98@gmail.com</a>
         <br>
         GitHub: <a href="https://github.com/MMesto">github.com/MMesto</a>
@@ -102,4 +124,5 @@
     <p>&copy; 2026 Mohamad Mesto. Gebouwd met semantische HTML5 en responsive CSS3.</p>
   </footer>
 </body>
+<script src="js/main.js" defer></script>
 </html>

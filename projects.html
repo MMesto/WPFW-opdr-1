@@ -11,6 +11,7 @@
   <header class="site-header">
     <p class="site-title">MESTO</p>
     <nav class="main-nav">
+    
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html" aria-current="page">Projecten</a></li>
@@ -21,22 +22,33 @@
 
   <main>
     <section>
-      <h1>Projecten</h1>
+      <div class="Projecten-kop">
+        <h1>Projecten</h1>
+      <div class="filterbalk">
+        <label for="filter-techniek">Filter op techniek:</label>
+        <select id="filter-techniek">
+          <option value="alle">Alle projecten</option>
+          <option value="Java">Java</option>
+          <option value="SQL">SQL</option>
+          <option value="HTML">HTML</option>
+        </select>
+      </div>
+      </div>
       <p>
         Een overzicht van projecten waar ik aan gewerkt heb.
          Elk project heeft een korte omschrijving,
           de gebruikte technieken en - waar mogelijk - een link naar de broncode.
       </p>
 
-      <ul class="project-grid">
+      <ul class="project-grid" id="projecten-lijst">
         <li class="project-card">
           <article>
             <h2>FoodLink</h2>
             <p>Een innovatieve oplossing voor SDG 2 - Zero Hunger, gericht op het 
-      toegankelijk maken van voedsel voor dakloze mensen in Den Haag. 
-      FoodLink maakt gebruik van slimme voedselkluizen met NFC-banden, 
-      een dashboard en een SQL-database voor het beheren van gebruikers, 
-      voedselpakketten, kluizen, wijken en vrijwilligers.</p>
+              toegankelijk maken van voedsel voor dakloze mensen in Den Haag. 
+              FoodLink maakt gebruik van slimme voedselkluizen met NFC-banden, 
+              een dashboard en een SQL-database voor het beheren van gebruikers, 
+              voedselpakketten, kluizen, wijken en vrijwilligers.</p>
             <p class="project-meta">Technieken: SQL, BPMN</p>
           </article>
         </li>
@@ -46,7 +58,7 @@
             <p>Een Java-hotelsimulatie met een tick-gebaseerde simulatiemotor, uitwisselbare
               bewegingsstrategieën via het Strategy-patroon en een event-systeem dat externe
               DLL-events verwerkt. Ontwikkeld met nadruk op SOLID-principes en clean code.</p>
-            <p class="project-meta">Technieken: Java, Junit, UML</p>
+            <p class="project-meta">Technieken: Java, JUnit, UML</p>
             <p><a href="https://github.com/FilipHHS/Hotelsimulator.git">Bekijk broncode</a></p>
           </article>
         </li>
@@ -69,4 +81,5 @@
     <p>&copy; 2026 Mohamad Mesto. Gebouwd met semantische HTML5 en responsive CSS3.</p>
   </footer>
 </body>
+<script src="js/main.js" defer></script>
 </html>
